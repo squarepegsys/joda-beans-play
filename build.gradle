@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+    id 'org.kiirun.joda-beans' version '1.0.5'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.joda:joda-beans:2.3'
+
+
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.2.0'
+
+}
+mainClassName = "com.squarepegsystems.Bookshelf"
